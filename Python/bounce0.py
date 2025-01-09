@@ -7,17 +7,17 @@ Description: ...
     
 """
 import matplotlib.pyplot as pyp
-import numpy as np
+
 # Define functions here
-def bounce(height=0.5, vy0=4):
+def bounce(height=0.5, v0=4, restitution=1):
     # program
     # Initialize variables
     g = 9.8
     dt = 1
     y = y0
-    v = vy0
+    v = v0
     t = 0
-    restitution = 1
+    # Create Lists
     y_positions = [y]
     time_values = [t]
     # Simulation loop
